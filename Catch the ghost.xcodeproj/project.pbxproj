@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AC6245302492FD1300050444 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62452F2492FD1300050444 /* RulesVC.swift */; };
+		ACC0D2432493084E00E1889C /* mükemmel18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D23E2493084D00E1889C /* mükemmel18.jpg */; };
+		ACC0D2442493084E00E1889C /* mükemmel21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D23F2493084D00E1889C /* mükemmel21.jpg */; };
+		ACC0D2452493084E00E1889C /* mükemmel20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D2402493084D00E1889C /* mükemmel20.jpg */; };
+		ACC0D2462493084E00E1889C /* mükemmel22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D2412493084E00E1889C /* mükemmel22.jpg */; };
+		ACC0D2472493084E00E1889C /* mükemmel19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D2422493084E00E1889C /* mükemmel19.jpg */; };
+		ACC0D24A2493086000E1889C /* mükemmel23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D2482493085F00E1889C /* mükemmel23.jpg */; };
+		ACC0D24B2493086000E1889C /* mükemmel16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D2492493086000E1889C /* mükemmel16.jpg */; };
+		ACC0D24D24930E9E00E1889C /* 51-512.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D24C24930E9E00E1889C /* 51-512.png */; };
+		ACC0D24F24930F8A00E1889C /* 10-realistic-lightning-bolt-cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC0D24E24930F8A00E1889C /* 10-realistic-lightning-bolt-cover.jpg */; };
 		ACF10A1E2492C524002E878E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A1D2492C524002E878E /* AppDelegate.swift */; };
 		ACF10A202492C524002E878E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A1F2492C524002E878E /* SceneDelegate.swift */; };
 		ACF10A222492C524002E878E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A212492C524002E878E /* ViewController.swift */; };
@@ -19,10 +28,23 @@
 		ACF10A372492C773002E878E /* Ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF10A362492C773002E878E /* Ghost.png */; };
 		ACF10A3B2492DF84002E878E /* DifficultyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A3A2492DF84002E878E /* DifficultyVC.swift */; };
 		ACF10A3D2492EFCC002E878E /* ScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A3C2492EFCC002E878E /* ScoreVC.swift */; };
+		AF010B542DDE5E88E674D4A8 /* Pods_Catch_the_ghost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96645945135FAEEC09C82A4E /* Pods_Catch_the_ghost.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73C6848514454476DB6E2CC6 /* Pods-Catch the ghost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catch the ghost.debug.xcconfig"; path = "Target Support Files/Pods-Catch the ghost/Pods-Catch the ghost.debug.xcconfig"; sourceTree = "<group>"; };
+		8C11F94EC2B717D652C7BA5F /* Pods-Catch the ghost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catch the ghost.release.xcconfig"; path = "Target Support Files/Pods-Catch the ghost/Pods-Catch the ghost.release.xcconfig"; sourceTree = "<group>"; };
+		96645945135FAEEC09C82A4E /* Pods_Catch_the_ghost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catch_the_ghost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC62452F2492FD1300050444 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
+		ACC0D23E2493084D00E1889C /* mükemmel18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mükemmel18.jpg"; sourceTree = "<group>"; };
+		ACC0D23F2493084D00E1889C /* mükemmel21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mükemmel21.jpg"; sourceTree = "<group>"; };
+		ACC0D2402493084D00E1889C /* mükemmel20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mükemmel20.jpg"; sourceTree = "<group>"; };
+		ACC0D2412493084E00E1889C /* mükemmel22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mükemmel22.jpg"; sourceTree = "<group>"; };
+		ACC0D2422493084E00E1889C /* mükemmel19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mükemmel19.jpg"; sourceTree = "<group>"; };
+		ACC0D2482493085F00E1889C /* mükemmel23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mükemmel23.jpg"; sourceTree = "<group>"; };
+		ACC0D2492493086000E1889C /* mükemmel16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mükemmel16.jpg"; sourceTree = "<group>"; };
+		ACC0D24C24930E9E00E1889C /* 51-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "51-512.png"; sourceTree = "<group>"; };
+		ACC0D24E24930F8A00E1889C /* 10-realistic-lightning-bolt-cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10-realistic-lightning-bolt-cover.jpg"; sourceTree = "<group>"; };
 		ACF10A1A2492C524002E878E /* Catch the ghost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catch the ghost.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF10A1D2492C524002E878E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF10A1F2492C524002E878E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF010B542DDE5E88E674D4A8 /* Pods_Catch_the_ghost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C14D023247FAB3F31A8931 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73C6848514454476DB6E2CC6 /* Pods-Catch the ghost.debug.xcconfig */,
+				8C11F94EC2B717D652C7BA5F /* Pods-Catch the ghost.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F3487027F6CC0D70BFAAB78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96645945135FAEEC09C82A4E /* Pods_Catch_the_ghost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACF10A112492C524002E878E = {
 			isa = PBXGroup;
 			children = (
 				ACF10A1C2492C524002E878E /* Catch the ghost */,
 				ACF10A1B2492C524002E878E /* Products */,
+				02C14D023247FAB3F31A8931 /* Pods */,
+				3F3487027F6CC0D70BFAAB78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +112,15 @@
 			children = (
 				ACF10A1D2492C524002E878E /* AppDelegate.swift */,
 				ACF10A1F2492C524002E878E /* SceneDelegate.swift */,
+				ACC0D23E2493084D00E1889C /* mükemmel18.jpg */,
+				ACC0D24C24930E9E00E1889C /* 51-512.png */,
+				ACC0D2422493084E00E1889C /* mükemmel19.jpg */,
+				ACC0D2402493084D00E1889C /* mükemmel20.jpg */,
+				ACC0D24E24930F8A00E1889C /* 10-realistic-lightning-bolt-cover.jpg */,
+				ACC0D23F2493084D00E1889C /* mükemmel21.jpg */,
+				ACC0D2412493084E00E1889C /* mükemmel22.jpg */,
+				ACC0D2492493086000E1889C /* mükemmel16.jpg */,
+				ACC0D2482493085F00E1889C /* mükemmel23.jpg */,
 				ACF10A212492C524002E878E /* ViewController.swift */,
 				ACF10A342492C65E002E878E /* PlayVC.swift */,
 				ACF10A3A2492DF84002E878E /* DifficultyVC.swift */,
@@ -92,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACF10A312492C525002E878E /* Build configuration list for PBXNativeTarget "Catch the ghost" */;
 			buildPhases = (
+				3AB07FE6A517AAA7D435CB26 /* [CP] Check Pods Manifest.lock */,
 				ACF10A162492C524002E878E /* Sources */,
 				ACF10A172492C524002E878E /* Frameworks */,
 				ACF10A182492C524002E878E /* Resources */,
+				474D0D553888AC3B354E5664 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,14 +196,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC0D2462493084E00E1889C /* mükemmel22.jpg in Resources */,
+				ACC0D2442493084E00E1889C /* mükemmel21.jpg in Resources */,
+				ACC0D2432493084E00E1889C /* mükemmel18.jpg in Resources */,
+				ACC0D24D24930E9E00E1889C /* 51-512.png in Resources */,
 				ACF10A2D2492C525002E878E /* LaunchScreen.storyboard in Resources */,
 				ACF10A372492C773002E878E /* Ghost.png in Resources */,
+				ACC0D24A2493086000E1889C /* mükemmel23.jpg in Resources */,
+				ACC0D24B2493086000E1889C /* mükemmel16.jpg in Resources */,
+				ACC0D2452493084E00E1889C /* mükemmel20.jpg in Resources */,
 				ACF10A2A2492C525002E878E /* Assets.xcassets in Resources */,
+				ACC0D24F24930F8A00E1889C /* 10-realistic-lightning-bolt-cover.jpg in Resources */,
 				ACF10A252492C524002E878E /* Main.storyboard in Resources */,
+				ACC0D2472493084E00E1889C /* mükemmel19.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AB07FE6A517AAA7D435CB26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Catch the ghost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		474D0D553888AC3B354E5664 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catch the ghost/Pods-Catch the ghost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catch the ghost/Pods-Catch the ghost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Catch the ghost/Pods-Catch the ghost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACF10A162492C524002E878E /* Sources */ = {
@@ -306,6 +410,7 @@
 		};
 		ACF10A322492C525002E878E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C6848514454476DB6E2CC6 /* Pods-Catch the ghost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,15 +420,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "mp.Catch-the-ghost";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		ACF10A332492C525002E878E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C11F94EC2B717D652C7BA5F /* Pods-Catch the ghost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -333,10 +440,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "mp.Catch-the-ghost";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
