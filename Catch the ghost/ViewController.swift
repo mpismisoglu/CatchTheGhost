@@ -1,20 +1,26 @@
-//
-//  ViewController.swift
-//  Catch the ghost
-//
-//  Created by Mert Pişmişoğlu on 11.06.2020.
-//  Copyright © 2020 Mert Pişmişoğlu. All rights reserved.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    let defaults = UserDefaults()
+    @IBOutlet weak var ImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        
+   
+       
     }
 
 
+    @IBAction func play(_ sender: Any) {
+        
+        performSegue(withIdentifier: "ikinciAdım", sender: self)
+    }
+    @IBAction func rules(_ sender: Any) {
+        
+        performSegue(withIdentifier: "ToRulesVC", sender: self)
+        
+    }
 }
 

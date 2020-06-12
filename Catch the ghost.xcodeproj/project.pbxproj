@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6245302492FD1300050444 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62452F2492FD1300050444 /* RulesVC.swift */; };
 		ACF10A1E2492C524002E878E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A1D2492C524002E878E /* AppDelegate.swift */; };
 		ACF10A202492C524002E878E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A1F2492C524002E878E /* SceneDelegate.swift */; };
 		ACF10A222492C524002E878E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A212492C524002E878E /* ViewController.swift */; };
@@ -14,9 +15,14 @@
 		ACF10A282492C524002E878E /* Catch_the_ghost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A262492C524002E878E /* Catch_the_ghost.xcdatamodeld */; };
 		ACF10A2A2492C525002E878E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF10A292492C525002E878E /* Assets.xcassets */; };
 		ACF10A2D2492C525002E878E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF10A2B2492C525002E878E /* LaunchScreen.storyboard */; };
+		ACF10A352492C65E002E878E /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A342492C65E002E878E /* PlayVC.swift */; };
+		ACF10A372492C773002E878E /* Ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF10A362492C773002E878E /* Ghost.png */; };
+		ACF10A3B2492DF84002E878E /* DifficultyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A3A2492DF84002E878E /* DifficultyVC.swift */; };
+		ACF10A3D2492EFCC002E878E /* ScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF10A3C2492EFCC002E878E /* ScoreVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC62452F2492FD1300050444 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
 		ACF10A1A2492C524002E878E /* Catch the ghost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catch the ghost.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF10A1D2492C524002E878E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF10A1F2492C524002E878E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		ACF10A292492C525002E878E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF10A2C2492C525002E878E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACF10A2E2492C525002E878E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF10A342492C65E002E878E /* PlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		ACF10A362492C773002E878E /* Ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ghost.png; sourceTree = "<group>"; };
+		ACF10A3A2492DF84002E878E /* DifficultyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyVC.swift; sourceTree = "<group>"; };
+		ACF10A3C2492EFCC002E878E /* ScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +71,13 @@
 				ACF10A1D2492C524002E878E /* AppDelegate.swift */,
 				ACF10A1F2492C524002E878E /* SceneDelegate.swift */,
 				ACF10A212492C524002E878E /* ViewController.swift */,
+				ACF10A342492C65E002E878E /* PlayVC.swift */,
+				ACF10A3A2492DF84002E878E /* DifficultyVC.swift */,
 				ACF10A232492C524002E878E /* Main.storyboard */,
+				AC62452F2492FD1300050444 /* RulesVC.swift */,
+				ACF10A3C2492EFCC002E878E /* ScoreVC.swift */,
 				ACF10A292492C525002E878E /* Assets.xcassets */,
+				ACF10A362492C773002E878E /* Ghost.png */,
 				ACF10A2B2492C525002E878E /* LaunchScreen.storyboard */,
 				ACF10A2E2492C525002E878E /* Info.plist */,
 				ACF10A262492C524002E878E /* Catch_the_ghost.xcdatamodeld */,
@@ -129,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF10A2D2492C525002E878E /* LaunchScreen.storyboard in Resources */,
+				ACF10A372492C773002E878E /* Ghost.png in Resources */,
 				ACF10A2A2492C525002E878E /* Assets.xcassets in Resources */,
 				ACF10A252492C524002E878E /* Main.storyboard in Resources */,
 			);
@@ -141,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF10A3B2492DF84002E878E /* DifficultyVC.swift in Sources */,
 				ACF10A222492C524002E878E /* ViewController.swift in Sources */,
+				ACF10A3D2492EFCC002E878E /* ScoreVC.swift in Sources */,
 				ACF10A1E2492C524002E878E /* AppDelegate.swift in Sources */,
+				AC6245302492FD1300050444 /* RulesVC.swift in Sources */,
+				ACF10A352492C65E002E878E /* PlayVC.swift in Sources */,
 				ACF10A202492C524002E878E /* SceneDelegate.swift in Sources */,
 				ACF10A282492C524002E878E /* Catch_the_ghost.xcdatamodeld in Sources */,
 			);

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,325 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Catch_the_ghost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5np-3A-Cf5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPY-bf-KJR">
+                                <rect key="frame" x="143" y="440" width="80" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7AG-27-sr9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9we-c5-4Ld">
+                                <rect key="frame" x="143" y="581" width="80" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rules"/>
+                                <connections>
+                                    <action selector="rules:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24Z-4f-x0o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5np-3A-Cf5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="46u-sB-6Se"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5np-3A-Cf5" secondAttribute="bottom" id="CST-5M-RbK"/>
+                            <constraint firstItem="5np-3A-Cf5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oiF-Zo-JBe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5np-3A-Cf5" secondAttribute="trailing" id="raT-DL-o4H"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ImageView" destination="5np-3A-Cf5" id="mqK-5E-bRg"/>
+                        <segue destination="xbk-IV-4bR" kind="presentation" identifier="ikinciAdım" modalPresentationStyle="fullScreen" id="HgE-X9-jPR"/>
+                        <segue destination="bii-7e-mWv" kind="presentation" identifier="ToRulesVC" modalPresentationStyle="fullScreen" id="JTZ-SY-W26"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-607" y="135"/>
+        </scene>
+        <!--RulesVC-->
+        <scene sceneID="CmN-58-Cpf">
+            <objects>
+                <viewController id="bii-7e-mWv" customClass="RulesVC" customModule="Catch_the_ghost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Cy-L5-h7N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I bet you can't touch more than 20 times while playing hard level :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dG4-x4-t0L">
+                                <rect key="frame" x="16" y="455" width="343" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5s-uK-2U6">
+                                <rect key="frame" x="16" y="20" width="121" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="bii-7e-mWv" eventType="touchUpInside" id="qE3-dv-zN9"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="jKE-gu-f7A"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You should touch to ghost as much as you can in 30 seconds.                                         " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TtO-m3-DPZ">
+                                <rect key="frame" x="16" y="130" width="343" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QYP-bY-D2W"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="TtO-m3-DPZ" id="XBW-Sf-jsd"/>
+                        <outlet property="label2" destination="dG4-x4-t0L" id="r3B-tj-HH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dbk-B9-h4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-584.79999999999995" y="870.31484257871068"/>
+        </scene>
+        <!--DifficultyVC-->
+        <scene sceneID="HlC-eq-Nez">
+            <objects>
+                <viewController id="xbk-IV-4bR" customClass="DifficultyVC" customModule="Catch_the_ghost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Auk-L1-oZn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPW-FH-RZ4">
+                                <rect key="frame" x="149" y="170" width="80" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="easy:" destination="xbk-IV-4bR" eventType="touchUpInside" id="w9P-P5-hPi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Io7-DV-l9t">
+                                <rect key="frame" x="147" y="300" width="80" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="medium:" destination="xbk-IV-4bR" eventType="touchUpInside" id="SqS-Gg-tWU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43T-IL-Bgf">
+                                <rect key="frame" x="149" y="460" width="80" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="hard:" destination="xbk-IV-4bR" eventType="touchUpInside" id="tqg-Yd-cSw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eKo-g8-I9z"/>
+                    </view>
+                    <connections>
+                        <segue destination="tTC-2h-Cod" kind="presentation" identifier="ToPlayVC" modalPresentationStyle="fullScreen" id="zmt-Vp-G91"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqY-u1-T4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223.19999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--PlayVC-->
+        <scene sceneID="AMJ-O2-sG9">
+            <objects>
+                <viewController id="tTC-2h-Cod" customClass="PlayVC" customModule="Catch_the_ghost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zj6-RL-IrK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8z-lV-wd0">
+                                <rect key="frame" x="16" y="255" width="96" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked1:" destination="tTC-2h-Cod" eventType="touchUpInside" id="ybx-EX-J8W"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-PY-pUI">
+                                <rect key="frame" x="264" y="255" width="95" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked3:" destination="tTC-2h-Cod" eventType="touchUpInside" id="Pig-Kq-ASD"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOW-6S-YxG">
+                                <rect key="frame" x="139" y="255" width="97" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked2:" destination="tTC-2h-Cod" eventType="touchUpInside" id="7TS-cr-tkS"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzh-6J-UuQ">
+                                <rect key="frame" x="16" y="379" width="96" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked4:" destination="tTC-2h-Cod" eventType="touchUpInside" id="zEB-zd-zpj"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtn-mm-5k4">
+                                <rect key="frame" x="264" y="379" width="95" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked6:" destination="tTC-2h-Cod" eventType="touchUpInside" id="Zhv-i3-qgI"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wp-P7-Ixs">
+                                <rect key="frame" x="139" y="379" width="97" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked5:" destination="tTC-2h-Cod" eventType="touchUpInside" id="nF8-s2-0IB"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-2M-zsP">
+                                <rect key="frame" x="16" y="503" width="96" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked7:" destination="tTC-2h-Cod" eventType="touchUpInside" id="n35-gK-1or"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8R-tr-x72">
+                                <rect key="frame" x="264" y="503" width="95" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked9:" destination="tTC-2h-Cod" eventType="touchUpInside" id="OsS-Z8-pcj"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-yU-3E7">
+                                <rect key="frame" x="139" y="503" width="97" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Ghost.png"/>
+                                <connections>
+                                    <action selector="buttonClicked8:" destination="tTC-2h-Cod" eventType="touchUpInside" id="aht-E4-AL1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCr-yp-ztt">
+                                <rect key="frame" x="172" y="20" width="187" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohE-jr-rl5">
+                                <rect key="frame" x="172" y="115" width="187" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time left: 30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4F-du-r0R">
+                                <rect key="frame" x="16" y="20" width="138" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Rd0-XF-Cul"/>
+                    </view>
+                    <connections>
+                        <outlet property="but1" destination="U8z-lV-wd0" id="tu2-ea-Dic"/>
+                        <outlet property="but2" destination="eOW-6S-YxG" id="Zyz-Km-PNZ"/>
+                        <outlet property="but3" destination="nJs-PY-pUI" id="Gx6-t6-cTr"/>
+                        <outlet property="but4" destination="nzh-6J-UuQ" id="EkB-cM-m4R"/>
+                        <outlet property="but5" destination="9wp-P7-Ixs" id="gyz-hk-xZg"/>
+                        <outlet property="but6" destination="qtn-mm-5k4" id="W5k-PG-hnq"/>
+                        <outlet property="but7" destination="wdQ-2M-zsP" id="JHs-Gr-fM7"/>
+                        <outlet property="but8" destination="Dec-yU-3E7" id="UHK-78-fKE"/>
+                        <outlet property="but9" destination="Y8R-tr-x72" id="uCX-lO-CXp"/>
+                        <outlet property="highScoreLabel" destination="ohE-jr-rl5" id="QxV-4F-Hcb"/>
+                        <outlet property="scoreLabel" destination="TCr-yp-ztt" id="pME-W8-FcI"/>
+                        <outlet property="timeLabel" destination="n4F-du-r0R" id="wYr-Dz-CkJ"/>
+                        <segue destination="ymf-0E-v8P" kind="presentation" identifier="ToScoreVC" modalPresentationStyle="fullScreen" id="XHJ-qi-fgO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="On4-dC-axA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026.4000000000001" y="135.38230884557723"/>
+        </scene>
+        <!--ScoreVC-->
+        <scene sceneID="iYf-MG-v8D">
+            <objects>
+                <viewController id="ymf-0E-v8P" customClass="ScoreVC" customModule="Catch_the_ghost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pvq-NX-QVM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ezr-Ss-K3J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APw-ho-hHd">
+                                <rect key="frame" x="16" y="192" width="343" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-ce-whq">
+                                <rect key="frame" x="16" y="277" width="343" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C9-O1-tGk">
+                                <rect key="frame" x="142" y="539" width="217" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Play again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="ymf-0E-v8P" eventType="touchUpInside" id="Q1I-Hg-6Wg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4Li-Ch-LxX" firstAttribute="bottom" secondItem="Ezr-Ss-K3J" secondAttribute="bottom" id="O5X-wK-wxv"/>
+                            <constraint firstItem="4Li-Ch-LxX" firstAttribute="trailing" secondItem="Ezr-Ss-K3J" secondAttribute="trailing" id="Uvb-cx-EC3"/>
+                            <constraint firstItem="Ezr-Ss-K3J" firstAttribute="leading" secondItem="4Li-Ch-LxX" secondAttribute="leading" id="fLz-wZ-UAF"/>
+                            <constraint firstItem="Ezr-Ss-K3J" firstAttribute="top" secondItem="4Li-Ch-LxX" secondAttribute="top" id="ldS-K0-mzM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Li-Ch-LxX"/>
+                    </view>
+                    <connections>
+                        <outlet property="highScore" destination="tzP-ce-whq" id="8cu-h7-d6M"/>
+                        <outlet property="score" destination="APw-ho-hHd" id="FC2-dt-ZRv"/>
+                        <segue destination="xbk-IV-4bR" kind="presentation" identifier="FromScoreVC" modalPresentationStyle="fullScreen" id="2bD-IW-Q5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSB-pW-9hG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.5999999999999" y="139.880059970015"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HgE-X9-jPR"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Ghost.png" width="147" height="200"/>
+    </resources>
 </document>
