@@ -6,10 +6,11 @@ class ScoreVC: UIViewController {
     @IBOutlet weak var highScore: UILabel!
     @IBOutlet weak var score: UILabel!
     let defaults = UserDefaults()
+    @IBOutlet weak var level: UILabel!
     var interstitial: GADInterstitial!
     override func viewDidLoad() {
         super.viewDidLoad()
-interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+interstitial = GADInterstitial(adUnitID: "ca-app-pub-3407628874905272/8601520617") 
         let request = GADRequest()
         interstitial.load(request)
         
@@ -27,14 +28,19 @@ interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910
             if key == 1
             {
                 highScore.text = "High score: \(hs)"
+                level.text = "Easy"
             }
             if key == 2
                    {
                     highScore.text = "High score: \(hs1)"
+                    level.text = "Medium"
+
                    }
             if key == 3
                    {
                     highScore.text = "High score: \(hs2)"
+                    level.text = "Hard"
+
                    }
         
         score.text = "Score: \(currentScore)"
